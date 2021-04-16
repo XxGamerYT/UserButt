@@ -119,6 +119,7 @@ async def fetch_info(replied_user, event):
     common_chat = replied_user.common_chats_count
     username = replied_user.user.username
     user_bio = replied_user.about
+    is_bot = replied_user.user.bot
                                                       TEMP_DOWNLOAD_DIRECTORY +
                                                       str(user_id) + ".jpg",
                                                       download_big=True)
