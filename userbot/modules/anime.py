@@ -124,15 +124,15 @@ def get_anime_manga(mal_id, search_type, _user_id):
     if search_type == "anime_anime":
         caption += textwrap.dedent(
             f"""
-        🆎 <b>Type</b>: <code>{result['type']}</code>
-        📡 <b>Status</b>: <code>{result['status']}</code>
+        🆎 <b>Tipo</b>: <code>{result['type']}</code>
+        📡 <b>Stato</b>: <code>{result['status']}</code>
         🎙️ <b>Aired</b>: <code>{result['aired']['string']}</code>
-        🔢 <b>Episodes</b>: <code>{result['episodes']}</code>
+        🔢 <b>Episodio</b>: <code>{result['episodes']}</code>
         💯 <b>Score</b>: <code>{result['score']}</code>
         🌐 <b>Premiered</b>: <code>{result['premiered']}</code>
-        ⌛ <b>Duration</b>: <code>{result['duration']}</code>
-        🎭 <b>Genres</b>: <code>{genre_string}</code>
-        🎙️ <b>Studios</b>: <code>{studio_string}</code>
+        ⌛ <b>Durata</b>: <code>{result['duration']}</code>
+        🎭 <b>Genere</b>: <code>{genre_string}</code>
+        🎙️ <b>Studio</b>: <code>{studio_string}</code>
         💸 <b>Producers</b>: <code>{producer_string}</code>
         🎬 <b>Trailer:</b> {LOL}
         📖 <b>Synopsis</b>: <code>{synopsis_string}</code> <a href='{result['url']}'>Read More</a>
@@ -141,12 +141,12 @@ def get_anime_manga(mal_id, search_type, _user_id):
     elif search_type == "anime_manga":
         caption += textwrap.dedent(
             f"""
-        🆎 <b>Type</b>: <code>{result['type']}</code>
-        📡 <b>Status</b>: <code>{result['status']}</code>
-        🔢 <b>Volumes</b>: <code>{result['volumes']}</code>
-        📃 <b>Chapters</b>: <code>{result['chapters']}</code>
+        🆎 <b>Tipo</b>: <code>{result['type']}</code>
+        📡 <b>Stato</b>: <code>{result['status']}</code>
+        🔢 <b>Volume</b>: <code>{result['volumes']}</code>
+        📃 <b>Pagine</b>: <code>{result['chapters']}</code>
         💯 <b>Score</b>: <code>{result['score']}</code>
-        🎭 <b>Genres</b>: <code>{genre_string}</code>
+        🎭 <b>Genere</b>: <code>{genre_string}</code>
         📖 <b>Synopsis</b>: <code>{synopsis_string}</code>
         """
         )
